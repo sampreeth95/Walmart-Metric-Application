@@ -4,12 +4,12 @@ Application to detect the outliers on User defined metrics and notifying them at
 Data-Base Used: Microsoft Azure
 Programming language: Java 8
 
-Instructions for Application Setup:
+## Instructions for Application Setup:
   •	Please unzip the Walmart-metrics zip file.
   •	Open the Walmart-metrics folder in your IDE.
   •	RUN the main class App.java
   
-Database Schema:
+## Database Schema:
   Product Table:
   product_name	  varchar(100) 
   category	      varchar(100)
@@ -28,7 +28,7 @@ Alerts Table:
   alerts_desc	           varchar(100)
   curr_date	             timestamp
 
-Application Documentation:
+## Application Documentation:
     Model (Package for creating database entities)
       •	Alerts (Creates Alert instances for notification to users)
       •	Product (Creates product instances for storing to products)
@@ -40,12 +40,12 @@ Application Documentation:
       •	Validation (Business logic to validate user Metrics)
     App (Class for initiating application).
 
-NOTE:
+## NOTE:
   Designed Scheduler thread which checks for outlier every 15 secs
   Adding random products for every 30 secs.
   Checking outliers for every 15 secs.
 
-Result:
+## Result:
   Application checks for alerts (notification for users) for every 15sec (which can be parametrized) and prints the alerts in the console to get notified.
 
 
