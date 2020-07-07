@@ -5,13 +5,15 @@ Data-Base Used: Microsoft Azure
 Programming language: Java 8
 
 ## Instructions for Application Setup:
+```
   •	Please unzip the Walmart-metrics zip file.
   •	Open the Walmart-metrics folder in your IDE.
   •	RUN the main class App.java
+  ```
   
 ## Database Schema:
 ```
-  ### Product Table:
+  Product Table:
   product_name	  varchar(100) 
   category	      varchar(100)
   units_sold	    varchar(100)
@@ -19,7 +21,7 @@ Programming language: Java 8
   ```
 
 ```
-### User_Metrics Table:
+User_Metrics Table:
 
   user_id	              int
   metric_name	          varchar(100)
@@ -27,7 +29,7 @@ Programming language: Java 8
   query	               varchar(500)
 ```
 ```
-### Alerts Table:
+Alerts Table:
   user_id	               int	
   alerts_desc	           varchar(100)
   curr_date	             timestamp
