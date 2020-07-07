@@ -10,35 +10,40 @@ Programming language: Java 8
   •	RUN the main class App.java
   
 ## Database Schema:
-  Product Table:
+```
+  ### Product Table:
   product_name	  varchar(100) 
   category	      varchar(100)
   units_sold	    varchar(100)
   curr_date	      timestamp
+  ```
 
-User_Metrics Table:
+```
+### User_Metrics Table:
 
   user_id	              int
   metric_name	          varchar(100)
   metric_desc	          varchar(100)
   query	               varchar(500)
-
-Alerts Table:
+```
+```
+### Alerts Table:
   user_id	               int	
   alerts_desc	           varchar(100)
   curr_date	             timestamp
+  ```
 
 ## Application Documentation:
-    Model (Package for creating database entities)
+    ### Model (Package for creating database entities)
       •	Alerts (Creates Alert instances for notification to users)
       •	Product (Creates product instances for storing to products)
       •	User_Metric (Creates user instances with the given metrics)
-    Utils (Package for common utilities for database creation, string generation, validation)
+    ### Utils (Package for common utilities for database creation, string generation, validation)
       •	DatabaseConnection (Makes connection with Azure DB)
       •	Scheduler (Runs user metrics at scheduled time Interval)
       •	StringGen (Generates random strings for product names)
       •	Validation (Business logic to validate user Metrics)
-    App (Class for initiating application).
+    ### App (Class for initiating application).
 
 ## NOTE:
   Designed Scheduler thread which checks for outlier every 15 secs
