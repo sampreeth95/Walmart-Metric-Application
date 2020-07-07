@@ -49,11 +49,15 @@ Alerts Table:
     ### App (Class for initiating application).
 
 ## NOTE:
+```
   Designed Scheduler thread which checks for outlier every 15 secs
   Adding random products for every 30 secs.
   Checking outliers for every 15 secs.
+  ```
 
 ## Result:
+```
   Application checks for alerts (notification for users) for every 15sec (which can be parametrized) and prints the alerts in the console to get notified.
+  ```
 
 
