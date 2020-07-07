@@ -1,8 +1,9 @@
 # Walmart-Metric-Application
 Application to detect the outliers on User defined metrics and notifying them at scheduled time intervals
-
+```
 Data-Base Used: Microsoft Azure
 Programming language: Java 8
+```
 
 ## Instructions for Application Setup:
 ```
